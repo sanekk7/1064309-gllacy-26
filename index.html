@@ -1,12 +1,132 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Glacy</title>
+</head>
 
-  </body>
+<body>
+  <header class="main-header">
+    <a class="main-header-logo"><img src="img/logo.svg" alt="логотип gllacy" width="154" height="64"></a>
+    <nav class="main-navigation">
+      <ul class="site-navigation">
+        <li><a href="contacts.html">Каталог</a>
+          <ul class="submenu">
+            <li class="novelty submenu"><a>Новинки</a> </li>
+            <li class="cream submenu"><a href="#">Сливочное</a></li>
+            <li class="sorbet submenu"><a href="#">Щербеты</a></li>
+            <li class="fruitice submenu"><a href="#">Фруктовый лед</a></li>
+            <li class="melorin submenu"><a href="#">Мелорин</a> </li>
+          </ul>
+        </li>
+        <li><a href="delivery.html">Доствка и оплата</a> </li>
+        <li><a href="company.html">О Компании</a> </li>
+      </ul>
+    </nav>
+    <ul class="user-navigation">
+      <li class="link-search">
+        <span>Поиск</span>
+        <form class="search form">
+          <input type="text" name="text search" placeholder="Что ищем?">
+        </form>
+      </li>
+      <li class="link-login">
+        <span>Вход</span>
+        <form class="login form">
+          <input type="email" name="email" placeholder="Электронная почта">
+          <input type="password" name="password" id="password-field" placeholder="Пароль">
+          <input type="button" name="button" id="button" value="Войти">
+          <div class="entrance">
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+          </div>
+        </form>
+      </li>
+      <li class="button-basket">
+        <a href="#"><img src="img/basket.svg" alt="корзина" width="21" height="20">Корзина</a>
+      </li>
+    </ul>
+  </header>
+  <main class="container">
+    <section class="main description">
+      <img src="img/wafer.png" alt="Вафля" width="1146" height="306">
+      <h1>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
+      <ul class="descriotion-list">
+        <li class="feature-item">
+          <a><img src="img/ice-cream.svg" alt="мороженное" width="49" height="49"></a>
+          <p>Все наше мороженое изготавливается на собственном производстве,
+            с использованием современного оборудования и проверенных временем технологий.
+          </p>
+        </li>
+        <li class="feature-item">
+          <a><img src="img/eco.svg" alt="эко" width="49" height="49"></a>
+          <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
+            дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+          </p>
+        </li>
+        <li class="feature-item">
+          <a><img src="img/cow.svg" alt="корова" width="49" height="49"></a>
+          <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний,
+            с которыми нас связывает долговременное сотрудничество.
+          </p>
+        </li>
+        <li class="feature-item">
+          <a><img src="img/thermometer.svg" alt="термометр" width="49" height="49"></a>
+          <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
+            который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <article class="blog">
+      <h3>Новое в нашем блоге</h3>
+      <a href="blog.index">10 способов сервировки фруктовых щербетов к столу</a>
+      <a><img src="img/strawberry.png" alt="клубника" width="560" height="220"></a>
+    </article>
+    <section class="subscribe">
+      <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
+        что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+      </p>
+      <form class="subscribe-mail" action="/echo" method="post">
+        <input type="email" name="email">
+        <input type="submit" name="submitmail" id="submitmail" value="Отправить">
+      </form>
+    </section>
+    <div class="maps">
+      <img src="img/maps.jpg" alt="карта" width="1200" height="430">
+      <img src="img/pin.svg" alt="Указатель мороженое" width="80" height="140">
+    </div>
+  </main>
+  <footer>
+    <div class="footer-social">
+      <a class="social-button" href="#"><img src="img/vk.svg" alt="вк" width="32" height="32">Вконтакте</a>
+      <a class="social-button" href="#"><img src="img/fb.svg" alt="fb" width="32" height="32">Фейсбук</a>
+      <a class="social-button" href="#"><img src="img/instagram.svg" alt="ins" width="32" height="32">Инстаграмм</a>
+      <a class="social-button" href="#"><img src="img/twitter.svg" alt="tw" width="32" height="32">Твиттер</a>
+    </div>
+    <div class="footer-info">
+      <a href="provider.html"><img src="img/heart.svg" alt="сердце" width="15" height="13">Для поставщиков</a>
+      <a href="company.html"> О производстве</a>
+      <a href="document.html">Наши документы</a>
+      <a href="standart.html">Экологические стандарты</a>
+    </div>
+    <div class="footer-logo">
+      <img src="img/logo-htmlacademy.svg" alt="htmlacademy" width="108" height="39">
+      <p>Сделано в<a class="botton-academy" href="https://htmlacademy.ru">HTML Academy</a>@2019</p>
+    </div>
+  </footer>
+  <div class="feedback">
+    <p>Мы обязательо вам ответим</p>
+    <button type="button" class="close feedback"><img src="img/close.svg" width="11px" height="11px" alt="закрыть форму обратной связи">
+    </button>
+    <form class="feedback form" action="/echo" method="post">
+      <input type="text" name="text" id="text" placeholder="Как Вас зовут">
+      <input type="email" name="email" placeholder="Ваша почта для ответа?">
+      <textarea name="textarea" id="textarea" placeholder="Напишите что-нибудь"></textarea>
+      <input type="submit" name="submit" id="submit" value="Отправить">
+    </form>
+  </div>
+</body>
+
 </html>
